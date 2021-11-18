@@ -1,0 +1,76 @@
+@import "base.scss";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "agenda posters foto-albums civi-saldo"
+        "agenda posters foto-albums verjaardagen"
+        "agenda forum overig verjaardagen"
+        "agenda forum is-het-al verjaardagen";
+    gap: 1rem;
+}
+.cell {
+    // border: 2px solid green;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 0.5rem;
+}
+
+.cell-posters {
+    grid-area: posters;
+}
+
+.cell-agenda {
+    grid-area: agenda;
+}
+
+.cell-forum {
+    grid-area: forum;
+}
+
+.cell-verjaardagen {
+    grid-area: verjaardagen;
+}
+
+.cell-foto-albums {
+    grid-area: foto-albums;
+}
+
+.cell-overig {
+    grid-area: overig;
+}
+
+.cell-civi-saldo {
+    grid-area: civi-saldo;
+}
+
+.cell-is-het-al {
+    grid-area: is-het-al;
+}
+
+@include media-breakpoint-down(md) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .ratio-3x2 {
+        --bs-aspect-ratio: 67%;
+    }
+}
+
+@include media-breakpoint-only(md) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 1fr;
+        grid-template-areas:
+            "agenda posters posters foto-albums"
+            "agenda forum forum verjaardagen"
+            "overig overig civi-saldo is-het-al";
+    }
+}

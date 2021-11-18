@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/index.css" />
+		<title>C.S.R. Delft sandbox</title>
+
+		<meta
+			name="theme-color"
+			content="#192b4b"
+			media="(prefers-color-scheme: light)"
+		/>
+		<meta
+			name="theme-color"
+			content="#192b4b"
+			media="(prefers-color-scheme: dark)"
+		/>
+
+		<script
+			defer
+			src="./node_modules/@fortawesome/fontawesome-free/js/all.js"
+		></script>
+	</head>
+	<body style="height: 100vh">
+		{{> nav }}
+
+        {{> voorpagina-grid }}
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script type="module" src="./assets/js/forum.js"></script>
+		<script>
+			// Copy the RSS and forum link
+			function copyLink(inputId) {
+				/* Get the input field */
+				var copyText = document.getElementById(inputId);
+
+				/* Select the text in the input field */
+				copyText.select();
+				copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+				/* Copy the text inside the text field */
+				document.execCommand('copy');
+
+				/* Alert the copied text */
+				alert('Copied the text: ' + copyText.value);
+			}
+
+			// When submitting the new draadje form
+			function submitForm() {
+				/* Get the form */
+				var form = document.getElementById('forumForm');
+
+				// Submit it
+				form.submit();
+			}
+		</script>
+	</body>
+</html>
