@@ -1,0 +1,78 @@
+<!-- Nieuw Draadje Modal -->
+<div
+	class="modal fade"
+	id="nieuwDraadjeModal"
+	tabindex="-1"
+	aria-labelledby="nieuwDraadjeModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="nieuwDraadjeModalLabel">
+					Nieuw draadje
+				</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">
+				<form id="forumForm" method="POST">
+					<div class="mb-3">
+						<select
+							class="form-select"
+							aria-label="Forum deel selecteren"
+						>
+							<option selected>Kies een forum deel</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="onderwerpTitel" class="form-label">
+							Titel
+						</label>
+						<input
+							type="text"
+							class="form-control"
+							id="onderwerpTitel"
+							placeholder="Onderwerp titel"
+						/>
+					</div>
+
+					<div class="mb-3">
+						<label for="bericht" class="form-label">
+							Bericht
+						</label>
+						<textarea
+							class="form-control"
+							id="bericht"
+							rows="3"
+						></textarea>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button
+					type="button"
+					class="btn btn-secondary"
+					data-bs-dismiss="modal"
+				>
+					Concept opslaan
+				</button>
+				<button
+					type="button"
+					class="btn btn-primary"
+					onclick="submitForm()"
+				>
+					Opslaan
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

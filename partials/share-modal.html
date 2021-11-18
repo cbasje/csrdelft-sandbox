@@ -1,0 +1,84 @@
+<!-- Share Modal -->
+<div
+	class="modal fade"
+	id="shareModal"
+	tabindex="-1"
+	aria-labelledby="shareModalLabel"
+	aria-hidden="true"
+>
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="shareModalLabel">Deel het forum</h5>
+				<button
+					type="button"
+					class="btn-close"
+					data-bs-dismiss="modal"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="modal-body">
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item position-relative">
+						<label
+							for="exampleFormControlInput1"
+							class="form-label"
+						>
+							<i class="fas fa-rss-square"></i>
+							RSS feed
+						</label>
+						<div class="input-group mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="exampleFormControlInput1"
+								placeholder="RSS feed link"
+								value="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+								aria-label="RSS feed link"
+								aria-describedby="button-addon1"
+								readonly
+							/>
+							<button
+								class="btn btn-outline-secondary"
+								type="button"
+								id="button-addon1"
+								onclick="copyLink('exampleFormControlInput1')"
+							>
+								Kopiëren
+							</button>
+						</div>
+					</li>
+					<li class="list-group-item position-relative">
+						<label
+							for="exampleFormControlInput2"
+							class="form-label"
+						>
+							<i class="fas fa-link"></i>
+							Link
+						</label>
+						<div class="input-group mb-3">
+							<input
+								type="text"
+								class="form-control"
+								id="exampleFormControlInput2"
+								placeholder="Forum link"
+								value="https://www.youtube.com/watch?v=dQw4w9WgXc"
+								aria-label="Forum link"
+								aria-describedby="button-addon2"
+								readonly
+							/>
+							<button
+								class="btn btn-outline-secondary"
+								type="button"
+								id="button-addon2"
+								onclick="copyLink('exampleFormControlInput2')"
+							>
+								Kopiëren
+							</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

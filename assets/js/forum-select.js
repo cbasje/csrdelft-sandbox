@@ -30,14 +30,11 @@ function getIsInDraadPost() {
         var range = sel.getRangeAt(0);
         const selContainer = range.commonAncestorContainer;
         isInDraadPost = draadPost.contains(selContainer) || draadPost == selContainer;
-
-        console.log(selContainer);
     }
     return isInDraadPost;
 }
 
 function doSomethingWithSelectedText() {
-    console.log('Do Something');
     var selectedText = getSelectedText();
     var container = getSelectionBoundingRect();
 
