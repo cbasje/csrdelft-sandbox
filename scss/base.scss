@@ -2,7 +2,9 @@
 // Bring in Bootstrap
 //
 
-@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
 
 // Customize some defaults
 $primary: #192b4b;
