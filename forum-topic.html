@@ -28,7 +28,7 @@
 				<!-- Forum list -->
 				<div class="list-group list-group-flush">
 					{{#each forum-messages}}
-					<div class="list-group-item">
+					<div class="list-group-item border-0 py-4">
 						<div class="row">
 							<div class="col-4 ps-sm-2 ps-1 img-lid">
 								<div class="ratio ratio-1x1">
@@ -113,7 +113,7 @@
 
 					<div class="list-group-item">{{> pagination }}</div>
 
-					{{> nieuwbericht-form }}
+					<div class="list-group-item py-3">{{> nieuwbericht-form }}</div>
 				</div>
 
 				{{> citeer-modal }}

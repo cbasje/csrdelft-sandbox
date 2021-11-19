@@ -1,13 +1,19 @@
 <div class="container-fluid bg-light p-3 min-vh-100">
-	<div class="container grid-container p-0 p-md-3">
-		<div class="cell cell-posters ratio ratio-3x2">{{> grid-cell-posters}}</div>
-		<div class="cell cell-agenda">{{> grid-cell-agenda}}</div>
-		<div class="cell cell-forum">{{> grid-cell-forum}}</div>
-		<div class="cell cell-verjaardagen">{{> grid-cell-verjaardagen}}</div>
-		<div class="cell cell-foto-albums">{{> grid-cell-albums}}</div>
-		<div class="cell cell-overig">{{> grid-cell-overig}}</div>
-		<div class="cell cell-civi-saldo">{{> grid-cell-civisaldo}}</div>
-		<div class="cell cell-is-het-al">{{> grid-cell-is-het-al}}</div>
+	<div class="container ratio ratio-4x3">
+		<div class="grid-container p-0 p-md-3">
+			<div class="cell cell-posters ratio ratio-3x2">
+				{{> grid-cell-posters}}
+			</div>
+			<div class="cell cell-agenda">{{> grid-cell-agenda}}</div>
+			<div class="cell cell-forum">{{> grid-cell-forum}}</div>
+			<div class="cell cell-verjaardagen">
+				{{> grid-cell-verjaardagen}}
+			</div>
+			<div class="cell cell-foto-albums">{{> grid-cell-albums}}</div>
+			<div class="cell cell-overig">{{> grid-cell-overig}}</div>
+			<div class="cell cell-civi-saldo">{{> grid-cell-civisaldo}}</div>
+			<div class="cell cell-is-het-al">{{> grid-cell-is-het-al}}</div>
+		</div>
 	</div>
 	<div class="container p-0 p-md-3 mt-5">
 		<div class="cell">{{> grid-cell-advertenties}}</div>

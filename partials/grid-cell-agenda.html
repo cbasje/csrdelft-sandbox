@@ -1,10 +1,24 @@
 <h2 class="h6 fw-bolder">Agenda</h2>
 
 <div class="list-group list-group-flush">
-    <div class="list-group-item">
-        <p>Werkgroep</p>
-    </div>
-    <div class="list-group-item">
-        <p>Werkgroep</p>
-    </div>
+	{{#each voorpagina.agenda}}
+	<div class="list-group-item">
+		<h3 class="agenda-item-dag fw-bolder text-black-50 text-uppercase">{{this.dag}}</h3>
+		{{#each this.items}}
+		<div class="d-flex align-items-center">
+			<p class="text-nowrap text-truncate flex-grow-1">
+				<span class="agenda-item-moment d-inline-block">
+					{{this.tijd}}
+				</span>
+				{{this.titel}}
+			</p>
+			{{#if this.kanInketzen}}
+			<div class="ms-1">
+				<input class="form-check-input" type="checkbox" value="{{ this.isIngeketzt }}" />
+			</div>
+			{{/if}}
+		</div>
+		{{/each}}
+	</div>
+	{{/each}}
 </div>

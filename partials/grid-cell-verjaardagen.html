@@ -1,10 +1,19 @@
 <h2 class="h6 fw-bolder">Verjaardagen</h2>
 
 <div class="list-group list-group-flush">
-    <div class="list-group-item">
-        <p>Werkgroep</p>
-    </div>
-    <div class="list-group-item">
-        <p>Werkgroep</p>
-    </div>
+	{{#each voorpagina.verjaardagen}}
+	<div class="list-group-item d-flex align-items-center">
+		<img
+			src="{{this.profielFoto}}"
+			alt=""
+			class="lid-profielfoto rounded-circle me-2"
+		/>
+		<div class="overflow-hidden">
+			<h3 class="verjaardagen-item-dag mb-0 fw-bolder text-black-50 text-uppercase">
+				{{this.dag}}
+			</h3>
+			<p class="text-nowrap text-truncate">{{ this.naam }}</p>
+		</div>
+	</div>
+	{{/each}}
 </div>
