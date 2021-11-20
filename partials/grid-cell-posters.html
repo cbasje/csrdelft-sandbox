@@ -4,27 +4,15 @@
 	data-bs-ride="carousel"
 >
 	<div class="carousel-inner h-100">
-		<div class="carousel-item h-100 active">
+		{{#each voorpagina.posters}}
+		<div class="carousel-item h-100 {{this.isActive}}">
 			<img
-				src="https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80"
+				src="{{this.src}}"
 				class="d-block w-100 h-100"
 				alt="..."
 			/>
 		</div>
-		<div class="carousel-item h-100">
-			<img
-				src="https://images.unsplash.com/photo-1508161773455-3ada8ed2bbec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2148&q=80"
-				class="d-block w-100 h-100"
-				alt="..."
-			/>
-		</div>
-		<div class="carousel-item h-100">
-			<img
-				src="https://images.unsplash.com/photo-1584448097764-374f81551427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
-				class="d-block w-100 h-100"
-				alt="..."
-			/>
-		</div>
+		{{/each}}
 	</div>
 	<button
 		class="carousel-control-prev"

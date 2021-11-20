@@ -1,1 +1,10 @@
-<h2 class="h6 fw-bolder mt-1">Foto-albums</h2>
+<h2 class="h6 fw-bolder mt-1"><a href="#">Foto-albums</a></h2>
+<p>{{voorpagina.album.titel}}</p>
+
+<div class="album-grid-container gap-1">
+	{{#each voorpagina.album.items}}
+	<div class="album-cell ratio ratio-1x1">
+		<img src="{{this}}" alt="" class="album-item" />
+	</div>
+	{{/each}}
+</div>

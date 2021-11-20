@@ -1,8 +1,10 @@
 @import 'base.scss';
 
+// Have a square ratio at breakpoint MD
 @include media-breakpoint-only(md) {
-	.ratio-4x3 {
-		--bs-aspect-ratio: calc(4 / 4 * 100%);
+	.ratio-4x3,
+	.ratio-16x9 {
+		--bs-aspect-ratio: 100%;
 	}
 }
 
@@ -17,6 +19,7 @@
 		'agenda forum is-het-al verjaardagen';
 	gap: 1rem;
 
+	// Set font-size for the grid
 	p {
 		font-size: 0.9rem;
 		margin-bottom: 0;
@@ -46,6 +49,24 @@
 		min-height: 0;
 	}
 }
+@include media-breakpoint-down(md) {
+	.grid-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@include media-breakpoint-only(md) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 2fr 2fr 1fr;
+		grid-template-areas:
+			'agenda posters posters foto-albums'
+			'agenda forum forum verjaardagen'
+			'overig overig civi-saldo is-het-al';
+	}
+}
+
 
 .cell-posters {
 	grid-area: posters;
@@ -106,6 +127,24 @@
 
 .cell-foto-albums {
 	grid-area: foto-albums;
+
+	.album-grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		align-content: stretch;
+		align-items: stretch;
+		justify-items: stretch;
+	}
+	img.album-cell {
+		min-width: 0;
+		min-height: 0;
+	}
+
+	@include media-breakpoint-down(sm) {
+		.album-grid-container {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }
 
 .cell-overig {
@@ -116,15 +155,15 @@
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		gap: 0.5rem;
+		height: calc(100% - 1.8rem);
 	}
 	.overig-cell {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
-		border-radius: 0.125rem;
 		background-color: var(--bs-light);
-		box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+		// box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
 		padding: 1rem;
 	}
 	@include media-breakpoint-up(sm) {
@@ -151,6 +190,10 @@
 
 .cell-civi-saldo {
 	grid-area: civi-saldo;
+
+	a.civisaldo-inleggen {
+		font-size: 0.8rem;
+	}
 }
 
 .cell-is-het-al {
@@ -161,26 +204,20 @@
 	height: 12rem;
 }
 @include media-breakpoint-down(sm) {
+	.container.ratio {
+		position: inherit;
+
+		&::before {
+			display: none;
+		}
+
+		> * {
+			position: inherit;
+		}
+	}
+
 	.cell-advertenties img {
 		height: auto;
 		width: 100%;
-	}
-}
-
-@include media-breakpoint-down(md) {
-	.grid-container {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-@include media-breakpoint-only(md) {
-	.grid-container {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 2fr 2fr 1fr;
-		grid-template-areas:
-			'agenda posters posters foto-albums'
-			'agenda forum forum verjaardagen'
-			'overig overig civi-saldo is-het-al';
 	}
 }
