@@ -28,16 +28,16 @@
 				<!-- Forum list -->
 				<div class="list-group list-group-flush">
 					{{#each forum-messages}}
-					<div class="list-group-item border-0 py-4">
-						<div class="row">
-							<div class="col-2 col-sm-1 ps-1 ps-sm-2">
+					<div class="list-group-item border-0 py-4 px-0 px-sm-3">
+						<div class="d-flex flex-row gap-3">
+							<div>
 								<img
 									src="./assets/images/person.jpg"
 									alt="Person"
 									class="lid-profielfoto rounded-circle"
 								/>
 							</div>
-							<div class="col">
+							<div class="flex-grow-1">
 								<div
 									class="
 										d-flex
@@ -112,7 +112,7 @@
 
 					<div class="list-group-item">{{> pagination }}</div>
 
-					<div class="list-group-item py-3">
+					<div class="list-group-item py-3 px-0 px-sm-3">
 						{{> nieuwbericht-form }}
 					</div>
 				</div>
