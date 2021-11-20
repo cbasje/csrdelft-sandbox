@@ -24,6 +24,12 @@ module.exports = defineConfig({
 					'Pellentesque pellentesque scelerisque nisi, nec vulputate felis imperdiet sit amet. Curabitur suscipit id augue eu mollis. Praesent porttitor augue et urna feugiat suscipit. Suspendisse feugiat fringilla diam ultrices lobortis. Fusce malesuada leo quis diam elementum tincidunt. Aliquam congue pretium accumsan. Suspendisse laoreet varius lectus, in ornare mauris tincidunt nec. Praesent elementum, risus euismod pretium viverra, tortor sem feugiat odio, in pharetra tellus tellus eu ipsum. Nam porttitor maximus arcu ut mattis. Curabitur sodales sapien eleifend sem iaculis, sit amet viverra orci fringilla. Donec non blandit orci. Sed nisi massa, rhoncus nec scelerisque et, commodo vel neque.',
 				],
 				voorpagina: {
+					advertenties: [
+						'dosign.jpg',
+						'galjema.png',
+						'mechdes.gif',
+						'tudelft.png',
+					],
 					agenda: [
 						{
 							dag: 'Woensdag 16 juni',
@@ -188,7 +194,7 @@ module.exports = defineConfig({
 							aantalNieuw: 0,
 						},
 						{
-							titel: 'Propaganda meem-draadie',
+							titel: 'Propaganda meem-draadje',
 							tijd: '22:00',
 							nieuweBerichten: false,
 							aantalNieuw: 0,
@@ -198,19 +204,22 @@ module.exports = defineConfig({
 						{
 							naam: 'Ama. van Ketel - de Wit',
 							dag: 'Vandaag',
-							profielFoto: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+							profielFoto:
+								'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
 						},
 						{
 							naam: 'Am. Immink',
 							dag: 'Morgen',
-							profielFoto: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+							profielFoto:
+								'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
 						},
 						{
 							naam: 'Ama. de Zwaan',
 							dag: 'do 13 juni',
-							profielFoto: 'https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+							profielFoto:
+								'https://images.unsplash.com/photo-1619895862022-09114b41f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
 						},
-					]
+					],
 				},
 			},
 		}),

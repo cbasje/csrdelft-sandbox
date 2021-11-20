@@ -1,8 +1,8 @@
-<h2 class="h6 fw-bolder">Forum</h2>
+<h2 class="h6 fw-bolder mt-1"><a href="/forum.html">Forum</a></h2>
 
 <div class="list-group list-group-flush">
 	{{#each voorpagina.forum}}
-	<div class="list-group-item">
+	<a href="/forum-topic.html" class="list-group-item list-group-item-action">
 		<div class="d-flex align-items-center">
 			<p class="text-nowrap text-truncate flex-grow-1">
 				<span class="forum-item-moment d-inline-block">
@@ -11,9 +11,11 @@
 				{{this.titel}}
 			</p>
 			{{#if this.nieuweBerichten}}
-			<span class="badge rounded-pill bg-accent">{{ this.aantalNieuw }}</span>
+			<span class="badge rounded-pill bg-accent"
+				>{{ this.aantalNieuw }}</span
+			>
 			{{/if}}
 		</div>
-	</div>
+	</a>
 	{{/each}}
 </div>

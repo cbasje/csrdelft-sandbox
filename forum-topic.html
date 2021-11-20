@@ -30,13 +30,12 @@
 					{{#each forum-messages}}
 					<div class="list-group-item border-0 py-4">
 						<div class="row">
-							<div class="col-4 ps-sm-2 ps-1 img-lid">
-								<div class="ratio ratio-1x1">
-									<img
-										src="./assets/images/person.jpg"
-										alt="Person"
-									/>
-								</div>
+							<div class="col-2 col-sm-1 ps-1 ps-sm-2">
+								<img
+									src="./assets/images/person.jpg"
+									alt="Person"
+									class="lid-profielfoto rounded-circle"
+								/>
 							</div>
 							<div class="col">
 								<div
@@ -113,7 +112,9 @@
 
 					<div class="list-group-item">{{> pagination }}</div>
 
-					<div class="list-group-item py-3">{{> nieuwbericht-form }}</div>
+					<div class="list-group-item py-3">
+						{{> nieuwbericht-form }}
+					</div>
 				</div>
 
 				{{> citeer-modal }}

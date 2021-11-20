@@ -1,11 +1,12 @@
 <div class="container-fluid bg-light p-3 min-vh-100">
-	<div class="container ratio ratio-4x3">
+	<!-- <div class="container ratio ratio-4x3"> -->
+	<div class="container px-0">
 		<div class="grid-container p-0 p-md-3">
 			<div class="cell cell-posters ratio ratio-3x2">
 				{{> grid-cell-posters}}
 			</div>
-			<div class="cell cell-agenda">{{> grid-cell-agenda}}</div>
 			<div class="cell cell-forum">{{> grid-cell-forum}}</div>
+			<div class="cell cell-agenda">{{> grid-cell-agenda}}</div>
 			<div class="cell cell-verjaardagen">
 				{{> grid-cell-verjaardagen}}
 			</div>
@@ -16,6 +17,6 @@
 		</div>
 	</div>
 	<div class="container p-0 p-md-3 mt-5">
-		<div class="cell">{{> grid-cell-advertenties}}</div>
+		<div class="cell cell-advertenties">{{> grid-cell-advertenties}}</div>
 	</div>
 </div>
