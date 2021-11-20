@@ -145,6 +145,14 @@
 			grid-template-columns: repeat(4, 1fr);
 		}
 	}
+
+	p a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 .cell-overig {
