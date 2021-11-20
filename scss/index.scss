@@ -75,6 +75,10 @@
 .cell-posters {
 	grid-area: posters;
 
+	.carousel {
+		position: absolute;
+	}
+
 	.carousel-item img {
 		object-fit: contain;
 	}
