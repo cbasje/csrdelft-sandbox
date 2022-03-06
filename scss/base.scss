@@ -1,19 +1,14 @@
-//
-// Bring in Bootstrap
-//
-
-@import './fontawesome/fontawesome.scss';
-@import './fontawesome/solid.scss';
-@import './fontawesome/brands.scss';
-
 // Customize some defaults
-$primary: #192b4b;
+$primary: #111f47;
 $secondary: #c4c4c4;
 
-// Import Source Sans Pro font from Google Fonts
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:wght@300;400;900&display=swap);
-// Change the Bootstrap variable to use Source Sans Pro
-$font-family-sans-serif: 'Source Sans Pro',
+$font-size-base: 0.9rem;
+$font-size-lg: $font-size-base * 2;
+
+// Import Inter font from Google Fonts
+@import url(//fonts.googleapis.com/css?family=Inter&display=swap);
+// Change the Bootstrap variable to use Inter
+$font-family-sans-serif: 'Inter',
 	// Cross-platform generic font family (default user interface font)
 	system-ui,
 	// Safari for macOS and iOS (San Francisco)
@@ -157,8 +152,11 @@ img.lid-profielfoto {
 	height: 2rem;
 }
 
-.svg-inline--fa {
-	@extend .me-1;
+// .svg-inline--fa {
+// 	@extend .me-1;
+// }
+i {
+	transform: translateY(0.1rem);
 }
 
 .translate-begin {

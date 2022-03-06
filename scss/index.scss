@@ -25,12 +25,12 @@
 
 	// Set font-size for the grid
 	p {
-		font-size: 0.9rem;
+		font-size: $font-size-sm;
 		margin-bottom: 0;
 	}
 	@for $i from 1 through 6 {
 		h#{$i} {
-			font-size: 0.9rem;
+			font-size: $font-size-sm;
 		}
 	}
 
@@ -103,7 +103,7 @@
 	grid-area: agenda;
 
 	.agenda-item-dag {
-		font-size: 0.8rem;
+		font-size: $font-size-sm;
 	}
 
 	.agenda-item-moment {
@@ -142,7 +142,7 @@
 	grid-area: verjaardagen;
 
 	.verjaardagen-item-dag {
-		font-size: 0.8rem;
+		font-size: $font-size-sm;
 	}
 }
 
@@ -194,9 +194,9 @@
 		background-color: var(--bs-light);
 		// box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
 		padding: 1rem;
-		
+
 		i {
-			font-size: 1.7rem;
+			font-size: $font-size-lg;
 		}
 	}
 	@include media-breakpoint-up(sm) {
@@ -224,12 +224,12 @@
 			display: flex;
 			flex-direction: row;
 		}
-	
+
 		.overig-cell {
-			font-size: 0.7rem;
+			font-size: $font-size-sm;
 
 			i {
-				font-size: 1.3rem;
+				font-size: $font-size-lg;
 			}
 		}
 	}
@@ -239,7 +239,7 @@
 	grid-area: civi-saldo;
 
 	a.civisaldo-inleggen {
-		font-size: 0.8rem;
+		font-size: $font-size-sm;
 	}
 }
 
