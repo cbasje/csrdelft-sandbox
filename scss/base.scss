@@ -152,6 +152,10 @@ img.lid-profielfoto {
 	height: 2rem;
 }
 
+.navbottom {
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
 // .svg-inline--fa {
 // 	@extend .me-1;
 // }
