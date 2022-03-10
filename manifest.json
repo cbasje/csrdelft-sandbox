@@ -8,12 +8,23 @@
 	"lang": "nl-NL",
 	"background_color": "#FFFFFF",
 	"theme_color": "#111f47",
-
+	"start_url": "/",
+	"scope": "/",
 	"icons": [
 		{
 			"src": "assets/images/Logo.svg",
 			"sizes": "any",
 			"type": "text/svg"
+		},
+		{
+			"src": "assets/images/Logo192.png",
+			"sizes": "192x192",
+			"type": "text/png"
+		},
+		{
+			"src": "assets/images/Logo512.png",
+			"sizes": "512x512",
+			"type": "text/png"
 		}
 	],
 	"shortcuts": [
