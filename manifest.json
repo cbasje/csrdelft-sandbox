@@ -19,37 +19,37 @@
 		{
 			"src": "assets/images/Logo-48x48.png",
 			"sizes": "48x48",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-72x72.png",
 			"sizes": "72x72",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-96x96.png",
 			"sizes": "96x96",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-144x144.png",
 			"sizes": "144x144",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-168x168.png",
 			"sizes": "168x168",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-192x192.png",
 			"sizes": "192x192",
-			"type": "text/png"
+			"type": "image/png"
 		},
 		{
 			"src": "assets/images/Logo-512x512.png",
 			"sizes": "512x512",
-			"type": "text/png"
+			"type": "image/png"
 		}
 	],
 	"shortcuts": [
