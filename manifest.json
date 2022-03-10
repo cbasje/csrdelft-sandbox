@@ -8,7 +8,7 @@
 	"lang": "nl-NL",
 	"background_color": "#FFFFFF",
 	"theme_color": "#111f47",
-	"start_url": "/",
+	"start_url": "https://csrdelft-sandbox.vercel.app/",
 	"scope": "/",
 	"icons": [
 		{
