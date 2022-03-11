@@ -63,7 +63,8 @@
 	"shortcuts": [
 		{
 			"name": "Forum",
-			"url": "/forum",
+			"short_name": "Forum",
+			"url": "/forum.html",
 			"description": "The forum!"
 		}
 	]
