@@ -1,49 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>C.S.R. Delft sandbox</title>
 
-		<link rel="manifest" href="{{resolve-from-root 'manifest.json'}}" />
-		<link
-			rel="stylesheet"
-			href="{{resolve-from-root 'assets/css/index.css'}}"
-		/>
-		<script src="https://unpkg.com/phosphor-icons"></script>
-
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
-		<meta name="apple-mobile-web-app-title" content="C.S.R." />
-		<link rel="apple-touch-icon" href="./assets/images/Logo.svg" />
-		<link
-			rel="apple-touch-icon"
-			sizes="512x512"
-			href="{{resolve-from-root 'assets/images/Logo-512x512.png'}}"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="192x192"
-			href="{{resolve-from-root 'assets/images/Logo-192x192.png'}}"
-		/>
-		<link
-			rel="apple-touch-icon"
-			sizes="168x168"
-			href="{{resolve-from-root 'assets/images/Logo-168x168.png'}}"
-		/>
-
-		<meta
-			name="theme-color"
-			content="#111f47"
-			media="(prefers-color-scheme: light)"
-		/>
-		<meta
-			name="theme-color"
-			content="#111f47"
-			media="(prefers-color-scheme: dark)"
-		/>
+		{{> meta }}
 	</head>
 	<body style="height: 100vh">
 		{{> nav }} {{> voorpagina-grid }}
