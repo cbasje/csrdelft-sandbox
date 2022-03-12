@@ -64,7 +64,7 @@
 		{
 			"name": "Forum",
 			"short_name": "Forum",
-			"url": "/forum.html",
+			"url": "https://csrdelft-sandbox.vercel.app/forum.html",
 			"description": "The forum!"
 		}
 	]
