@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "vite",
 		"build": "vite build",
-		"prod": "yarn build && cp -r ./assets/images dist/assets/images && cp ./manifest.json dist",
+		"prod": "yarn build && cp -r ./assets/images dist/assets/images",
 		"serve": "vite preview",
 		"css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 scss -o assets/css/",
 		"css-prefix": "postcss --replace assets/css/*.css --use autoprefixer --map",

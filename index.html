@@ -6,8 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>C.S.R. Delft sandbox</title>
 
-		<link rel="manifest" href="./manifest.json" />
-		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="manifest" href="{{resolve-from-root 'manifest.json'}}" />
+		<link
+			rel="stylesheet"
+			href="{{resolve-from-root 'assets/css/index.css'}}"
+		/>
 		<script src="https://unpkg.com/phosphor-icons"></script>
 
 		<meta name="mobile-web-app-capable" content="yes" />
@@ -17,18 +20,18 @@
 		<link rel="apple-touch-icon" href="./assets/images/Logo.svg" />
 		<link
 			rel="apple-touch-icon"
-			sizes="152x152"
-			href="./assets/images/Logo-512x512.png"
+			sizes="512x512"
+			href="{{resolve-from-root 'assets/images/Logo-512x512.png'}}"
 		/>
 		<link
 			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./assets/images/Logo-192x192.png"
+			sizes="192x192"
+			href="{{resolve-from-root 'assets/images/Logo-192x192.png'}}"
 		/>
 		<link
 			rel="apple-touch-icon"
-			sizes="167x167"
-			href="./assets/images/Logo-168x168.png"
+			sizes="168x168"
+			href="{{resolve-from-root 'assets/images/Logo-168x168.png'}}"
 		/>
 
 		<meta
