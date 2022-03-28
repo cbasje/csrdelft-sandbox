@@ -28,11 +28,6 @@
 		font-size: $font-size-sm;
 		margin-bottom: 0;
 	}
-	@for $i from 1 through 6 {
-		h#{$i} {
-			font-size: $font-size-sm;
-		}
-	}
 
 	.list-group-item {
 		padding: 0.5rem 0;
@@ -103,7 +98,7 @@
 	grid-area: agenda;
 
 	.agenda-item-dag {
-		font-size: $font-size-sm;
+		font-size: $font-size-xs;
 	}
 
 	.agenda-item-moment {
@@ -142,7 +137,7 @@
 	grid-area: verjaardagen;
 
 	.verjaardagen-item-dag {
-		font-size: $font-size-sm;
+		font-size: $font-size-xs;
 	}
 }
 
