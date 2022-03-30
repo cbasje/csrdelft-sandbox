@@ -363,6 +363,7 @@ img.lid-profielfoto {
 
 body > .container-fluid {
 	padding-block: $spacer * 4.5;
+	padding-inline: env(safe-area-inset-right) env(safe-area-inset-left);
 }
 
 i.fas,
