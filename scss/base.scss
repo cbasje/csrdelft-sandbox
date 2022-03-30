@@ -163,6 +163,9 @@ $font-sizes: (
 :root {
 	accent-color: $primary;
 }
+.container-fluid {
+	padding-inline: env(safe-area-inset-right) env(safe-area-inset-left);
+}
 
 .navbar-brand img.logo {
 	height: 2rem;
@@ -191,7 +194,27 @@ img.lid-profielfoto {
 	left: 0;
 	bottom: 0;
 	z-index: $zindex-fixed;
-	padding-bottom: env(safe-area-inset-bottom);
+	padding-block: 0 env(safe-area-inset-bottom);
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			text-align: center;
+
+			.nav-link {
+				color: #888888;
+
+				&.active {
+					color: $primary;
+				}
+				i {
+					margin-bottom: $spacer * 0.25;
+				}
+			}
+		}
+	}
 }
 
 .css-1dbjc4n {
@@ -363,12 +386,11 @@ img.lid-profielfoto {
 
 body > .container-fluid {
 	padding-block: $spacer * 4.5;
-	padding-inline: env(safe-area-inset-right) env(safe-area-inset-left);
 }
 
 i.fas,
 i.fab {
-	@extend .me-1;
+	margin-right: $spacer * 0.25;
 }
 
 .translate-begin {

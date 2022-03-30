@@ -23,11 +23,11 @@
 			</div>
 
 			<div class="container bg-white rounded p-3">
-				{{> header-forum }} {{> nieuwdraadje-modal }} {{> filter-modal
-				}} {{> share-modal }}
+				{{> header-forum }} {{> nieuwdraadje-modal }} {{> filter-modal}}
+				{{> share-modal }}
 
 				<!-- Forum list -->
-				<div class="list-group list-group-flush ps-sm-4">
+				<main class="list-group list-group-flush ps-sm-4">
 					{{#each forum-topics}}
 					<a
 						class="list-group-item list-group-item-action px-0 position-relative"
@@ -74,7 +74,7 @@
 						</div>
 					</a>
 					{{/each}}
-				</div>
+				</main>
 
 				{{> pagination }}
 			</div>

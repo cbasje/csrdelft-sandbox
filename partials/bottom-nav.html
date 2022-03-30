@@ -17,11 +17,27 @@
 		</div>
 	</nav> -->
 
-	<!-- <nav
-		class="navbar navbar-fixed-bottom navbar-expand-md navbar-light shadow-sm bg-light d-block d-md-none"
+	<nav
+		class="navbar navbar-fixed-bottom navbar-light shadow-sm bg-light d-block d-md-none"
 	>
-		Hoi
-	</nav> -->
+		<div class="container-fluid">
+			<ul class="d-flex flex-row w-100 justify-content-center gap-1 my-1">
+				{{#each navItemsPhone}}
+				<li class="nav-item">
+					<a
+						href="#"
+						aria-label="Home"
+						aria-current="page"
+						class="{{ this.isActive }}"
+					>
+						<i class="fa-solid fa-house fs-5 user-select-none"></i>
+						<span>{{ this.title }}</span>
+					</a>
+				</li>
+				{{/each}}
+			</ul>
+		</div>
+	</nav>
 
 	<!-- <div
 		class="css-1dbjc4n r-aqfbo4 r-1p0dtai r-1d2f490 r-12vffkv r-1xcajam r-zchlnj"
@@ -64,19 +80,4 @@
 			</div>
 		</div>
 	</div> -->
-	<div
-		style="
-			background-color: purple;
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			padding-top: 1rem;
-			padding-left: 1rem;
-			padding-right: 1rem;
-			padding-bottom: calc(1rem + env(safe-area-inset-bottom));
-		"
-	>
-		Dit is veilig
-	</div>
 </aside>
