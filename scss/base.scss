@@ -1,3 +1,7 @@
+@import './fontawesome/fontawesome.scss';
+@import './fontawesome/solid.scss';
+@import './fontawesome/brands.scss';
+
 // Customize some defaults
 $primary: #112a4d;
 $secondary: #c4c4c4;
@@ -156,6 +160,10 @@ $font-sizes: (
 //
 // Custom styles
 //
+:root {
+	accent-color: $primary;
+}
+
 .navbar-brand img.logo {
 	height: 2rem;
 }
@@ -189,11 +197,9 @@ body > .container-fluid {
 	padding-block: $spacer * 4.5;
 }
 
-// .svg-inline--fa {
-// 	@extend .me-1;
-// }
-i {
-	transform: translateY(0.1rem);
+i.fas,
+i.fab {
+	@extend .me-1;
 }
 
 .translate-begin {
