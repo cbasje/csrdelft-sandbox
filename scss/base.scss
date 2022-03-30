@@ -199,6 +199,7 @@ img.lid-profielfoto {
 	-moz-box-direction: normal;
 	-moz-box-orient: vertical;
 	align-items: stretch;
+	justify-items: center;
 	border: 0px solid black;
 	box-sizing: border-box;
 	display: flex;
@@ -211,6 +212,23 @@ img.lid-profielfoto {
 	padding: 0px;
 	position: relative;
 	z-index: $zindex-fixed;
+	text-align: center;
+
+	span {
+		font-size: $font-size-xs;
+	}
+}
+.css-18t94o4 {
+	cursor: pointer;
+}
+.css-4rbku5 {
+	background-color: rgba(0, 0, 0, 0);
+	color: inherit;
+	font: inherit;
+	list-style: none;
+	margin: 0px;
+	text-align: inherit;
+	text-decoration: none;
 }
 .r-aqfbo4 {
 	backface-visibility: hidden;
@@ -330,12 +348,6 @@ img.lid-profielfoto {
 	border-radius: 9999px;
 }
 
-.r-lwhw9o {
-	height: 1.75rem;
-}
-.r-1nao33i {
-	color: $white;
-}
 .r-lrvibr {
 	user-select: none;
 }

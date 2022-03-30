@@ -23,6 +23,8 @@ module.exports = defineConfig({
 					'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque ipsum ac nibh porttitor, ac bibendum odio convallis. Nulla quis viverra nisl, sed semper massa. Donec pharetra ligula nisl. Cras id nibh sagittis, lobortis turpis eu, interdum nibh. Aenean placerat rutrum accumsan. Nam enim felis, consequat maximus risus et, malesuada euismod lacus. In ullamcorper a ex sit amet imperdiet. Integer dapibus dui enim, eu viverra urna eleifend vel. Donec sed pharetra risus. Nulla molestie arcu id diam ullamcorper interdum. Etiam pellentesque lacus id est accumsan, non congue arcu rutrum. Donec sed urna placerat, lacinia orci et, tempor turpis.',
 					'Pellentesque pellentesque scelerisque nisi, nec vulputate felis imperdiet sit amet. Curabitur suscipit id augue eu mollis. Praesent porttitor augue et urna feugiat suscipit. Suspendisse feugiat fringilla diam ultrices lobortis. Fusce malesuada leo quis diam elementum tincidunt. Aliquam congue pretium accumsan. Suspendisse laoreet varius lectus, in ornare mauris tincidunt nec. Praesent elementum, risus euismod pretium viverra, tortor sem feugiat odio, in pharetra tellus tellus eu ipsum. Nam porttitor maximus arcu ut mattis. Curabitur sodales sapien eleifend sem iaculis, sit amet viverra orci fringilla. Donec non blandit orci. Sed nisi massa, rhoncus nec scelerisque et, commodo vel neque.',
 				],
+				navItems: [],
+				navItemsPhone: ['Home', 'Forum', 'Agenda', 'Leden', 'Meer'],
 				voorpagina: {
 					advertenties: [
 						'dosign.jpg',
@@ -157,7 +159,7 @@ module.exports = defineConfig({
 						},
 					],
 					album: {
-						'titel': 'Commissiebedankdag',
+						titel: 'Commissiebedankdag',
 						dag: '21 juni 2021',
 						items: [
 							'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZXZlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
@@ -175,7 +177,7 @@ module.exports = defineConfig({
 							'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZXZlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
 							'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
 							'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZXZlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-						]
+						],
 					},
 					forum: [
 						{
@@ -222,9 +224,18 @@ module.exports = defineConfig({
 						},
 					],
 					posters: [
-						{ isActive: 'active', src: 'https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80'},
-						{ isActive: '', src: 'https://images.unsplash.com/photo-1508161773455-3ada8ed2bbec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2148&q=80'},
-						{ isActive: '', src: 'https://images.unsplash.com/photo-1584448097764-374f81551427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80'}
+						{
+							isActive: 'active',
+							src: 'https://images.unsplash.com/photo-1571847140471-1d7766e825ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1333&q=80',
+						},
+						{
+							isActive: '',
+							src: 'https://images.unsplash.com/photo-1508161773455-3ada8ed2bbec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2148&q=80',
+						},
+						{
+							isActive: '',
+							src: 'https://images.unsplash.com/photo-1584448097764-374f81551427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80',
+						},
 					],
 					verjaardagen: [
 						{
