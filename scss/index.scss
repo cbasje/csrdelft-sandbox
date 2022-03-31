@@ -244,6 +244,8 @@
 
 .cell-advertenties img {
 	height: 12rem;
+	max-width: 100%;
+	object-fit: contain;
 }
 @include media-breakpoint-down(sm) {
 	.cell-advertenties img {
