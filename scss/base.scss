@@ -164,7 +164,8 @@ $font-sizes: (
 	accent-color: $primary;
 }
 .container-fluid {
-	padding-inline: env(safe-area-inset-right) env(safe-area-inset-left);
+	padding-inline: env(safe-area-inset-right, $spacer)
+		env(safe-area-inset-left, $spacer);
 }
 
 .navbar-brand img.logo {
